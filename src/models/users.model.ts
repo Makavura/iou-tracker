@@ -2,7 +2,10 @@ import { Prop, SchemaFactory, Schema } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
 export interface UserModel {
-
+    name: string;
+    owes: {};
+    owed_by: {};
+    balance: string;
     _id?: string;
 }
 
